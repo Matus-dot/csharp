@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace Cvicenie_BattleSimulator
 {
-    internal class Monster
+    internal class MonsterSpecial
     {
-
         public string RaceType { get; set; }
         public int HP { get; set; }
         public int DMG { get; set; }
 
-        public Monster(string raceType, int hP, int dMG)
+        public MonsterSpecial(string raceType, int hp, int dmg)
         {
             RaceType = raceType;
-            HP = hP;
-            DMG = dMG;
+            HP = hp;
+            DMG = dmg;
         }
 
         public void MonsterAttack(Hero hero)
         {
-            hero.HP -= this.DMG;
+            hero.TakeDamage(this.DMG);
+            this.DMG += 1;
         }
-
     }
+
 }
