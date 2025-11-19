@@ -83,23 +83,28 @@ namespace Cvicenie_idlefarmer
                     case "1":
                         if (Money < plantprice)
                         {
-                            Console.WriteLine("si chudobny jak kkt:" + plantprice);
+                            Console.WriteLine("si chudobny jak kkt: " + plantprice);
                             Console.ReadLine();
                             break;
                         }
-                        Plant plant1 = new Plant("zelenina", Randomgenerator.Next(10, 15), Randomgenerator.Next(20, 30));
+
                         
+                        Money -= plantprice;
+
+                        Plant plant1 = new Plant("zelenina", Randomgenerator.Next(10, 15), Randomgenerator.Next(20, 30));
                         Field.Add(plant1);
+
                         plantprice++;
-                        Console.WriteLine("stoji" + plantprice);
+                        Console.WriteLine("kúpil si rastlinku, zostavajúce peniaze: " + Money);
+                        Console.ReadLine();
                         break;
                     case "2":
                         foreach (Plant plant in storage)
                         {
                             Console.WriteLine(plant);
                         }
-                        Console.ReadLine();                   /*stav += plant.Price;|pomoc chatgpt(prompt:ako to hodim do toho aby mi to case vypisal)
-                      */break;
+                        Console.ReadLine();                   /*stav += plant.Price;|pomoc chatgpt(prompt:ako to hodim do toho aby mi to case vypisal) */
+                        break;
                                                                  /* Money += stav;
                                                                    break;*/
                     case "3":
@@ -108,7 +113,7 @@ namespace Cvicenie_idlefarmer
                         {
                             stav += plant.Price; 
                         }
-
+                        
                         Money += stav * storage.Count;
                         storage.Clear(); 
 
