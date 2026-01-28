@@ -14,25 +14,7 @@
             monsters.Add(monster2);
             monsters.Add(monster3);
 
-            while (true) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           
 
             while (true)
             {

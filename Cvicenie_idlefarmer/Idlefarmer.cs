@@ -69,7 +69,7 @@ namespace Cvicenie_idlefarmer
                     storage.Add(plant);
                 }
                 Console.WriteLine("koniec dna" + Day);
-                Console.WriteLine("stav uctu" + Money);
+                Console.WriteLine("stav uctu" + Money + "$");
                 Console.WriteLine("menu");
                 Console.WriteLine("novyden=enter");
                 Console.WriteLine("1 pridanie rastlinky" + "(" + plantprice +")");
@@ -83,7 +83,7 @@ namespace Cvicenie_idlefarmer
                     case "1":
                         if (Money < plantprice)
                         {
-                            Console.WriteLine("si chudobny jak kkt: " + plantprice);
+                            Console.WriteLine("si chudobny jak kkt maš iba: " + Money + "$");
                             Console.ReadLine();
                             break;
                         }
@@ -95,7 +95,7 @@ namespace Cvicenie_idlefarmer
                         Field.Add(plant1);
 
                         plantprice++;
-                        Console.WriteLine("kúpil si rastlinku, zostavajúce peniaze: " + Money);
+                        Console.WriteLine("kúpil si rastlinku, zostavajúce peniaze: " + Money + "$");
                         Console.ReadLine();
                         break;
                     case "2":
@@ -118,7 +118,7 @@ namespace Cvicenie_idlefarmer
                         storage.Clear(); 
 
                         Console.WriteLine("predal si storage");
-                        Console.WriteLine("stav uctu" + Money );
+                        Console.WriteLine("Stav učtu:" + Money + "$" );
                         Console.ReadLine();
                         break;
                        
