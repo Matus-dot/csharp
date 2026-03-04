@@ -4,7 +4,7 @@ namespace Rpg_hra
 {
     public class Hero
     {
-        public const int AttackEnergyCost = 10;
+        public const int AttackEnergyCost = 1;
 
         public string Name { get; set; }
         public int MaxHp { get; set; }

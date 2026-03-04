@@ -25,7 +25,7 @@ namespace Rpg_hra
                 name = "Hrdina";
             }
 
-            hero = new Hero(name, 200, 50, 10, 2, 20);
+            hero = new Hero(name, 2000, 100, 20, 2, 20);
 
             while (true)        
             {
@@ -97,8 +97,13 @@ namespace Rpg_hra
                     if (!monster.IsDead())
                     {
                         int mAtk = monster.Attack();
-                        int actual = mAtk - hero.TotalDefense();
-                        if (actual < 0) actual = 0;
+                        int actual = mAtk - hero.TotalDefense();  //(actual < 0) actual = 0;
+                        if (actual > 0) ; 
+                        {
+                            actual < 0  Console.WriteLine("si slaby");
+                            
+
+                        }
                         hero.TakeDamage(actual);
                         Console.WriteLine(monster.Name + " útočí za " + mAtk + " dmg. Po zohľadnení obrany prijímaš " + actual + " dmg.");
                     }

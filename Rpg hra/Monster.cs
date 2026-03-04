@@ -56,7 +56,7 @@ namespace Rpg_hra
                 int i = rng.Next(types.Length);
                 string name = types[i];
 
-                int[] hpVals = new int[] { 25, 30, 22, 28, 20 };
+                int[] hpVals = new int[] { 33, 30, 22, 28, 20 };
                 int[] minVals = new int[] { 4, 6, 5, 6, 4 };
                 int[] maxVals = new int[] { 6, 8, 7, 9, 6 };
                 int[] rewards = new int[] { 10, 14, 12, 13, 9 };
