@@ -111,6 +111,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvicenie_gameshop", "cvicen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_sims", "Cvicenie_sims\Cvicenie_sims.csproj", "{9813755E-3759-4D95-9794-F213C4535129}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppGuess", "WpfAppGuess\WpfAppGuess.csproj", "{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppStopky", "WpfAppStopky\WpfAppStopky.csproj", "{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_pokemon", "Cvicenie_pokemon\Cvicenie_pokemon.csproj", "{A76AE26C-607F-4877-B7BD-E69814BBA8A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -745,6 +751,42 @@ Global
 		{9813755E-3759-4D95-9794-F213C4535129}.Release|x64.Build.0 = Release|Any CPU
 		{9813755E-3759-4D95-9794-F213C4535129}.Release|x86.ActiveCfg = Release|Any CPU
 		{9813755E-3759-4D95-9794-F213C4535129}.Release|x86.Build.0 = Release|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Debug|x64.Build.0 = Debug|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Debug|x86.Build.0 = Debug|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Release|x64.ActiveCfg = Release|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Release|x64.Build.0 = Release|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Release|x86.ActiveCfg = Release|Any CPU
+		{199E8E42-CF0C-4DA1-B70B-597C4016BDEC}.Release|x86.Build.0 = Release|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Debug|x64.Build.0 = Debug|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Debug|x86.Build.0 = Debug|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Release|x64.ActiveCfg = Release|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Release|x64.Build.0 = Release|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Release|x86.ActiveCfg = Release|Any CPU
+		{ECEE5974-6A92-4FC5-B7D4-A08971EF3B56}.Release|x86.Build.0 = Release|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Debug|x64.Build.0 = Debug|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Debug|x86.Build.0 = Debug|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Release|x64.ActiveCfg = Release|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Release|x64.Build.0 = Release|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Release|x86.ActiveCfg = Release|Any CPU
+		{A76AE26C-607F-4877-B7BD-E69814BBA8A1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

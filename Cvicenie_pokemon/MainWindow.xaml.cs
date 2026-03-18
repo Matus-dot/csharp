@@ -19,8 +19,8 @@ namespace Cvicenie_pokemon
         public MainWindow()
         {
             InitializeComponent();
-            Hero myhero=new Hero(50,100,10);
-            Priserkabojimbojim myenemy = new Priserkabojimbojim(100, 200, 1 );
+            Hero myhero=new Hero(100,100,10,100,200);
+            Priserkabojimbojim myenemy = new Priserkabojimbojim(200, 200, 1 );
             
 
             Window_fight fight_window = new Window_fight( myhero, myenemy);

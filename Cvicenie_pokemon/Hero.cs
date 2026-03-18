@@ -13,12 +13,15 @@ namespace Cvicenie_pokemon
         public int Helth {  get; set; }
         public int MaximumHelth { get; set; }
         public int Demage { get; set; }
-
-        public Hero(int helth, int maximumHelth, int demage)
+        public int ActualEnergy { get; set; }
+        public int MaxEnergy { get; set; }
+        public Hero(int helth, int maximumHelth, int demage,int actualenergy, int maxenegry)
         {
             Helth = helth;
             MaximumHelth = maximumHelth;
             Demage = demage;
+            ActualEnergy = actualenergy;
+            MaxEnergy = maxenegry;              
         }
     }
 }

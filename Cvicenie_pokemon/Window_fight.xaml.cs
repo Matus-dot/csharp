@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace Cvicenie_pokemon
 {
-
+    //+"\n"+"adadf"
     public partial class Window_fight : Window
     {
         public Hero myActualHero { get; set; }
@@ -28,7 +28,7 @@ namespace Cvicenie_pokemon
 
             ProgressbarHP.Value = myhero.Helth;
             ProgressbarHP.Maximum = myhero.MaximumHelth;
-            Label_HP.Content = ProgressbarHP.Value + "/" + ProgressbarHP.Maximum;
+            Label_HP.Content = ProgressbarHP.Value + "/" + ProgressbarHP.Maximum + "\n" + myActualHero.ActualEnergy + "/" + myActualHero.MaxEnergy;
 
             ProgressBar_enemy.Maximum = myenemy.MaximumHelth;
             ProgressBar_enemy.Value = myenemy.Helth;
@@ -41,7 +41,7 @@ namespace Cvicenie_pokemon
             EnemyattackHero(1);
             HeroAttackEnemy(1);
             CheckHp();
-
+            InitializeComponent();
         }
         private void HeroAttackEnemy(int demagescale)
         {
@@ -50,7 +50,7 @@ namespace Cvicenie_pokemon
             {
                 myActualEnemy.Helth = 0;
             }
-            Label_enemyHP.Content = myActualEnemy.Helth + "/" + myActualEnemy.MaximumHelth;
+            Label_enemyHP.Content = myActualEnemy.Helth + "/" + myActualEnemy.MaximumHelth ;
 
             ProgressBar_enemy.Value = myActualEnemy.Helth;
         }
@@ -58,7 +58,13 @@ namespace Cvicenie_pokemon
         {
             myActualHero.Helth -= myActualEnemy.Demage * demagescale2;
             if (myActualHero.Helth < 0) { myActualHero.Helth = 0; }
-            Label_HP.Content = myActualHero.Helth + "/" + myActualHero.MaximumHelth;
+            myActualHero.ActualEnergy -=10;
+            if (myActualHero.ActualEnergy < 0) 
+            {
+                myActualHero.Helth=0; 
+                demagescale2 = 0;
+            }
+            Label_HP.Content = myActualHero.Helth + "/" + myActualHero.MaximumHelth +"\n" + myActualHero.ActualEnergy  + "/" + myActualHero.MaxEnergy;
             ProgressbarHP.Value = myActualHero.Helth;
         }
 
@@ -67,6 +73,7 @@ namespace Cvicenie_pokemon
             EnemyattackHero(1);
             HeroAttackEnemy(3);
             CheckHp();
+            InitializeComponent();
         }
 
         private void Hard_HeroDemage_Click(object sender, RoutedEventArgs e)
@@ -74,6 +81,7 @@ namespace Cvicenie_pokemon
             EnemyattackHero(1);
             HeroAttackEnemy(5);
             CheckHp();
+            InitializeComponent();
         }
         private void CheckHp() 
         {
